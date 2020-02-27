@@ -3,3 +3,16 @@
 ###################
 
 not latest
+# BEGIN ANSIBLE MANAGED BLOCK
+  
+  - job_name: 'ini-nama-jobs123'
+    metrics_path: '/metrics'
+    consul_sd_configs:
+      - server: '172.21.251.28:8500'
+        services: ['albaragista123']
+    relabel_configs:
+      - source_labels: ['__meta_consul_address']
+        action: 'replace'
+        target_label:  '__address__'
+        replacement:   '${1}:1234'
+# END ANSIBLE MANAGED BLOCK
