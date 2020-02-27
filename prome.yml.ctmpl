@@ -3,6 +3,8 @@
 ###################
 not latest
 
+CONFLICT
+TESTING
   
   - job_name: '{{ job_name}}'
     metrics_path: '/metrics'
