@@ -3,6 +3,8 @@
 ###################
 not latest
 
+CONFLICT
+TESTING
   
   - job_name: 'ini-nama-jobs-sangaaaat-baru'
     metrics_path: '/metrics'
