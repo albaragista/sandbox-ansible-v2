@@ -13,6 +13,7 @@ not latest
         action: 'replace'
         target_label:  '__address__'
         replacement:   '${1}:123400'
+<<<<<<< HEAD
 
   - job_name: 'ini-nama-jobs-02'
     metrics_path: '/metrics'
@@ -38,3 +39,5 @@ TESTING
         action: 'replace'
         target_label:  '__address__'
         replacement:   '${1}:123400'
+=======
+>>>>>>> 6b927f8f20a895d889ee9175dc7bef24a38e6565
