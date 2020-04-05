@@ -13,6 +13,6 @@ not latest
       - source_labels: ['__meta_consul_address']
         action: 'replace'
         target_label:  '__address__'
-        replacement:   '${1}:123400'
+        replacement:   '${1}:XXXXX'
   
 
