@@ -23,8 +23,6 @@ pipeline {
         stage('Add & Commit') {
             steps {
                 echo 'Git add.."
-                sh 'git status'
-                sh 'git commit'
             }
         }
     }
