@@ -24,7 +24,8 @@ pipeline {
             steps {
                 echo 'Git add.."
                 sh 'git add .'
-                sh 'git commit -m "Commiting from Jenkins"'
+                sh 'git status'
+                sh 'git commit'
             }
         }
     }
