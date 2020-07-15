@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                checkout scm 
                 echo 'Building..'
             }
         }
@@ -16,6 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'git pull'
             }
         }
     }
