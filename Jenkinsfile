@@ -20,9 +20,10 @@ pipeline {
                 sh 'git pull origin master'
             }
         }
-        stage('Add & Commit') {
+        stage('Commit') {
             steps {
-                echo 'Git add.."
+                echo 'yuhuuu'
+                sh 'git status'
             }
         }
     }
