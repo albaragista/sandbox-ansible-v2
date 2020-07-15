@@ -20,5 +20,12 @@ pipeline {
                 sh 'git pull origin master'
             }
         }
+        stage('Add & Commit') {
+            steps {
+                echo 'Git add.."
+                sh 'git add .'
+                sh 'git commit -m "Commiting from Jenkins"'
+            }
+        }
     }
 }
